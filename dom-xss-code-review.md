@@ -2,7 +2,7 @@
 
 DOM XSS Sources to grep for:
 
-```script
+```javascript
 document.URL
 document.documentURI
 document.URLUnencoded
@@ -21,7 +21,7 @@ Database
 
 DOM XSS Sinks to grep for:
 
-```script
+```javascript
 window.location
 eval()
 WebSocket()
@@ -47,6 +47,7 @@ element.onevent
 
 jQuery sinks:
 
+```jquery
 add()
 after()
 append()
@@ -67,9 +68,11 @@ init()
 index()
 jQuery.parseHTML()
 $.parseHTML()
+```
 
 Javascript sinks:
 
+```javascript
 eval()
 Function()
 setTimeout()
@@ -80,11 +83,14 @@ execScript()
 msSetImmediate()
 range.createContextualFragment()
 crypto.generateCRMFRequest()
+```
 
 PostMessage XSS:
 
+```javascript
 postmessage()
 .addEventListener('message',
+```
 Reference:
 https://portswigger.net/web-security/dom-based/controlling-the-web-message-source
 
