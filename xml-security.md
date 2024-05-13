@@ -31,7 +31,7 @@ saxReader.setFeature("http://xml.org/sax/features/external-parameter-entities", 
 
 Python parsers:
 
-```
+```python
 xml.etree.ElementTree
 xml.dom
 xml.dom.minidom
