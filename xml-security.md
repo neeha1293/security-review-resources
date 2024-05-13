@@ -5,6 +5,7 @@ Java parsers have XXE enabled by default, so we must always explicitly disable i
 
 Java parsers: 
 
+```
 DocumentBuilderFactory 
 SAX parsers (SaxParserFactory, SAXReader, etc)
 DOM4J
@@ -13,6 +14,7 @@ TransformerFactory
 Validator
 SchemaFactory
 XMLReader
+```
 
 ## Safe XML configuration: 
 
@@ -29,12 +31,15 @@ saxReader.setFeature("http://xml.org/sax/features/external-parameter-entities", 
 
 Python parsers:
 
+```
 xml.etree.ElementTree
 xml.dom
 xml.dom.minidom
 xml.dom.pulldom
 xml.sax
+```
 
 All these parsers are vulnerable to DDos through entity expansion (a billion laughs, quadratic blowup). 
+
 They are safe from external entity expansion, dtd retrieval. 
 
