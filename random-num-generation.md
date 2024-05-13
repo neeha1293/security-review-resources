@@ -1,6 +1,6 @@
 # Insecure Random Generators:
 
-##Java
+## Java
 
 Unsafe:
 ```java
@@ -33,7 +33,7 @@ secrets.token_urlsafe(16)
 secrets.compare_digest(a,b)
 ```
 
-##Node.js
+## Node.js
 
 Safe:
 ```node.js
