@@ -18,7 +18,7 @@ XMLReader
 
 ## Safe XML configuration: 
 
-```xml
+```java
 dbf.setFeature('http://apache.org/xml/features/disallow-doctype-decl', true);
 xmlInputFactory.setProperty(XMLInputFactory.SUPPORT_DTD, false);
 domParser.setAttribute(DOMParser.EXPAND_ENTITYREF, false);
