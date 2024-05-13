@@ -2,6 +2,7 @@
 
 DOM XSS Sources to grep for:
 
+```script
 document.URL
 document.documentURI
 document.URLUnencoded
@@ -16,9 +17,11 @@ localStorage
 sessionStorage
 IndexedDB (mozIndexedDB, webkitIndexedDB, msIndexedDB)
 Database
+```
 
 DOM XSS Sinks to grep for:
 
+```script
 window.location
 eval()
 WebSocket()
@@ -40,6 +43,7 @@ element.innerHTML
 element.outerHTML
 element.insertAdjacentHTML
 element.onevent
+```
 
 jQuery sinks:
 
